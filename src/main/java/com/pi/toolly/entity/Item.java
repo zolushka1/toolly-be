@@ -22,7 +22,8 @@ public class Item {
 
     private String name;
 
-    private Long itemgroup_id;
+    @Column(name = "itemgroup_id")
+    private Long itemgroupId;
 
     private BigDecimal qty;
 
