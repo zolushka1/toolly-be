@@ -17,8 +17,8 @@ public class Item extends BaseEntity {
     @Column(name = "id")
     private Long id;
 
-    @Column(name = "item_count_id")
-    private Long itemCountId;
+    @Column(name = "main_entity_id")
+    private Long mainEntityId;
 
     @Column(name = "name")
     private String name;

@@ -5,12 +5,14 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.math.BigDecimal;
+
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "item_count")
-public class ItemCount extends BaseEntity{
+@Table(name = "count_price")
+public class CountPrice extends BaseEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -20,18 +22,11 @@ public class ItemCount extends BaseEntity{
     @Column(name = "main_entity_id")
     private Long mainEntityId;
 
-    @Column(name = "name")
-    private String name;
+    @Column(name = "count_id")
+    private Long countId;
 
-    @Column(name = "code")
-    private String code;
+    @Column(name = "amount")
+    private BigDecimal amount;
 
-    @Column(name = "total_qty")
-    private Double totalQty;
-
-    @Column(name = "total_sell_price")
-    private Double totalSellPrice;
-
-    @Column(name = "total_cost_price")
-    private Double totalCostPrice;
 }
+

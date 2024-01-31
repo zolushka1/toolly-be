@@ -17,6 +17,9 @@ public class Counter extends BaseEntity{
     @Column(name = "id")
     private Long id;
 
+    @Column(name = "main_entity_id")
+    private Long mainEntityId;
+
     @Column(name = "name")
     private String name;
 
@@ -26,5 +29,4 @@ public class Counter extends BaseEntity{
     @Column(name = "phone")
     private String phone;
 
-    
 }

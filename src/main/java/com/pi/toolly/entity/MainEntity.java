@@ -9,16 +9,13 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "item_count")
-public class ItemCount extends BaseEntity{
+@Table(name = "main_entity")
+public class MainEntity extends BaseEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private Long id;
-
-    @Column(name = "main_entity_id")
-    private Long mainEntityId;
 
     @Column(name = "name")
     private String name;
@@ -26,12 +23,4 @@ public class ItemCount extends BaseEntity{
     @Column(name = "code")
     private String code;
 
-    @Column(name = "total_qty")
-    private Double totalQty;
-
-    @Column(name = "total_sell_price")
-    private Double totalSellPrice;
-
-    @Column(name = "total_cost_price")
-    private Double totalCostPrice;
 }

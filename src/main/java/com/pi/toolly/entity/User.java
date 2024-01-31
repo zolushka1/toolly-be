@@ -17,6 +17,9 @@ public class User extends BaseEntity {
     @Column(name = "id")
     private Long id;
 
+    @Column(name = "main_entity_id")
+    private Long mainEntityId;
+
     @Column(name = "name")
     private String name;
 
