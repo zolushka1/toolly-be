@@ -11,7 +11,6 @@ import lombok.NoArgsConstructor;
 @Entity
 @Table(name = "counter")
 public class Counter extends BaseEntity{
-    
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

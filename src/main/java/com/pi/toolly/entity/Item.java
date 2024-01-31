@@ -26,13 +26,13 @@ public class Item extends BaseEntity {
     @Column(name = "code")
     private String code;
 
-    @Column(name = "name")
+    @Column(name = "price")
     private Double price;
 
-    @Column(name = "name")
+    @Column(name = "cost")
     private Double cost;
 
-    @Column(name = "name")
+    @Column(name = "qty")
     private Double qty;
 
 }
